@@ -6,21 +6,12 @@
   "types": "dist/index.d.ts",
   "module": "dist/index.mjs",
   "packageManager": "yarn@3.6.3",
-  "workspaces": [
-    "examples/*"
-  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
-    },
-    "./url.js": {
-      "types": "./dist/url.d.ts",
-      "import": "./dist/url.mjs",
-      "require": "./dist/url.js"
-    },
-    "./*": "./*"
+    }
   },
   "scripts": {
     "dev": "tsup --watch src",

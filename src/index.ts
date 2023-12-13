@@ -108,6 +108,7 @@ export function stylexPlugin(opts: StylexPluginOptions = {}): Plugin {
   const processStylexRules = () => {
     const rules = Object.values(stylexRules).flat()
     if (!rules.length) return
+    // @ts-ignore
     return stylexBabelPlugin.processStylexRules(rules, false)
   }
 
